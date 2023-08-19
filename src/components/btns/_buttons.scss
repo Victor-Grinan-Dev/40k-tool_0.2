@@ -1,0 +1,49 @@
+.standard,
+.primary,
+.secundary,
+.warning,
+.danger {
+  border-radius: 0.3rem;
+  padding: 0 1rem;
+  border: none;
+  box-shadow: 3px 3px 0 black;
+  cursor: pointer;
+}
+
+.standard:hover,
+.primary:hover,
+.secundary:hover,
+.warning:hover,
+.danger:hover {
+  color: #01b1e1;
+}
+
+.standard:focus,
+.primary:focus,
+.secundary:focus,
+.warning:focus,
+.danger:focus {
+  box-shadow: 1px 1px 0 black;
+  transform: translateY(2px);
+  color: #61dafb;
+
+  animation: shine 0.2s linear;
+}
+
+.standard {
+  background-color: $primary-1;
+  color: $primary-1;
+}
+.primary {
+  background-color: $primary-3;
+  color: white;
+}
+.secundary {
+  background-color: $primary-5;
+}
+.warning {
+  background-color: $warning-3;
+}
+.danger {
+  background-color: $danger-3;
+}

@@ -1,0 +1,25 @@
+@keyframes spin {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}
+
+@keyframes shine {
+  0% {
+    background-color: black;
+  }
+  35% {
+    background-color: white;
+    box-shadow: 0 0 10px white;
+  }
+  65% {
+    background-color: white;
+    box-shadow: 0 0 10px white;
+  }
+  100% {
+    background-color: black;
+  }
+}

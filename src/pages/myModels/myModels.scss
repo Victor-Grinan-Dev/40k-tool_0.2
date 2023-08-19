@@ -1,0 +1,43 @@
+.my-models {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: flex-start;
+  align-items: flex-start;
+  gap: 0.5rem;
+
+  height: fit-content;
+
+  &__card {
+    width: 95vw;
+    height: 5rem;
+    border-radius: 0.5rem;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 0 1rem;
+    // font-size: 1rem;
+    background-color: $primary-2;
+
+    &-text {
+      font-size: 1rem;
+    }
+    &-image {
+      width: 5rem;
+      margin: 0 1rem;
+    }
+
+    &:hover {
+      background-color: $primary-3;
+      cursor: pointer;
+    }
+
+    &:focus {
+      animation: shine 0s linear;
+    }
+  }
+}
+
+.modelName {
+  flex: 1;
+  margin: 0 1rem;
+}

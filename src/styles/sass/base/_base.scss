@@ -1,0 +1,67 @@
+html {
+  //defines what a rem is:
+  /*by default font size is 16px 1 rem is normally the font size default value,
+    if we want to customize and set the font size to 10px
+    we could set the font to be x percent of the actual value that represents those 10px we want.
+    formula:
+      10px we want / 16px total height * 100% converted to percent = 62.5%)
+    */
+
+  font-size: 62.5%; // NOW 1 rem = 10px ACCROSS THE HTML
+  box-sizing: border-box;
+
+  // @include respond(big-desktop) {
+  //   font-size: 75%; //1rem = 12px 12/16 = 75%
+  // }
+}
+
+*,
+*::after,
+*::before {
+  margin: 0;
+  padding: 0;
+  box-sizing: inherit;
+}
+
+body {
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+
+  background-color: #282c34;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  font-size: calc(10px + 2vmin);
+  color: white;
+}
+
+code {
+  font-family: source-code-pro, Menlo, Monaco, Consolas, "Courier New",
+    monospace;
+}
+
+.App {
+  text-align: center;
+  display: flex;
+  height: 100%;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+.App-logo {
+  height: 40vmin;
+  pointer-events: none;
+  animation: spin infinite 20s linear;
+}
+
+@media (prefers-reduced-motion: no-preference) {
+  .App-logo {
+    animation: spin infinite 20s linear;
+  }
+}
+
+.App-link,
+a {
+  color: #61dafb;
+}

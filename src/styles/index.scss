@@ -1,0 +1,24 @@
+@import "../pages/layout/layout.scss";
+
+/*Abstracts*/
+@import "./sass/abstracts/functions";
+@import "./sass/abstracts/mixins";
+@import "./sass/abstracts/variables";
+
+/*Base*/
+@import "./sass/base/base";
+@import "./sass/base/animations";
+@import "./sass/base/typography";
+@import "./sass/base/utilities";
+
+/*Components*/
+@import "../components/navegator/navegator";
+@import "../components/footer/footer";
+@import "../components/card/card";
+@import "../components/cardModel/cardModel";
+@import "../components/btns/buttons";
+
+/*pages*/
+@import "../pages/grapharmy/grapharmy";
+@import "../pages/myModels/myModels";
+@import "../pages/indexCard/indexCard";
